@@ -106,3 +106,9 @@ page{
   width: 700rpx;
   height: 200rpx;
 }
+.word{
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 10px;
+}

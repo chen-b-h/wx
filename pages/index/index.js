@@ -4,6 +4,8 @@ const app = getApp()
 
 Page({
   data: {
+    ifUp:"1",
+    limit:"20",
     shopping:[
       {
         id:"1",
@@ -70,68 +72,20 @@ Page({
         imgUrl:"../../static/image/exm2.png",
         text:"奖品：绿宝石高原绿茶一级铁盒 X10",
         date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"7",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖团"
-      },
-      {
-        id:"8",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖团"
-      },
-      {
-        id:"9",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"10",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"11",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"12",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"13",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"14",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"15",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
-      },
-      {
-        id:"16",
-        imgUrl:"../../static/image/exm2.png",
-        text:"奖品：绿宝石高原绿茶一级铁盒 X10",
-        date:"06月11日 12:00 自动开奖"
       }
     ]
+  },
+  //下拉
+  onReachBottom:function(){
+    this.setData({ifUp:0});
+    if(this.data.tea.length<this.data.limit){
+      let teaAppend = this.data.tea;
+      for (let i=0; i<4; i++)
+      {
+        teaAppend.push(teaAppend[1]);
+      }
+      this.setData({ifUp:2, tea:teaAppend})
+    }
   },
   //事件处理函数
   bindViewTap: function() {

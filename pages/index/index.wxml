@@ -37,7 +37,7 @@
 <view style="color:#DC3E34;font-size:17px;font-weight:bold;margin:10px">
     自动福利
 </view>
-<view style="margin:10px" class="teaItem">
+<view style="margin:10px" class="teaItem" id="teaItem">
     <block wx:for="{{tea}}" wx:key="id">
         <view class="tea">
             <image src="{{item.imgUrl}}"/>
@@ -47,6 +47,8 @@
             </view>
         </view>
     </block>
+    <view wx:if="{{ifUp==1}}" class="word">上拉加载更多</view>
+    <view wx:if="{{ifUp==2}}" class="word">正在加载中</view>
 </view>
 <view class="contact">
 联系客服
