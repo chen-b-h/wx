@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="nav">
+    <view class="navLeft">
+        <image class="" src="../../static/image/love.png" style="width:24rpx;height:24rpx"/>
+        1 心愿
+    </view>
+    <view class="navRight">
+        去签到
+        <image class="" src="../../static/image/go.png" style="width:24rpx;height:24rpx"/>
+    </view>
+</view>
+<view class="navT">
+    <view style="font-size:40rpx;color:#DC3E34;font-weight:bold">
+        每日福利
+    </view>
+    <view class="smallNav">
+        <view class="sNavLeft">
+            我要上首页   
+        </view>
+        <view class="sNavRight">
+            分享
+        </view>
+    </view>
+</view>
+<view class="shopItem">
+    <block wx:for="{{shopping}}" wx:key="id">
+        <view class="shopping">
+            <image src="{{item.imgUrl}}" class="img" mode="scaleToFill"/>
+            <view class="text">
+                <view>{{item.title}}</view>
+                <view>{{item.text}}</view>
+                <view>{{item.date}}</view> 
+            </view>
+        </view>  
+    </block>
+</view>
+<view style="color:#DC3E34;font-size:17px;font-weight:bold;margin:10px">
+    自动福利
+</view>
+<view style="margin:10px" class="teaItem">
+    <block wx:for="{{tea}}" wx:key="id">
+        <view class="tea">
+            <image src="{{item.imgUrl}}"/>
+            <view>
+                <view>{{item.text}}</view>
+                <view>{{item.date}}</view>
+            </view>
+        </view>
+    </block>
+</view>
+<view class="contact">
+联系客服
+<image src="../../static/image/go.png"/>
+</view>
+<view class="bImage"><image src="../../static/image/exm3.png" mode="scaleToFill" /></view>
+  

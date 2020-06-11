@@ -1,0 +1,108 @@
+/**index.wxss**/
+page{
+  background: #F0F0F0;
+  width: 100%;
+  height: 100%;
+}
+.nav{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 40rpx;
+  padding: 40rpx 0;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #D8D8D8;
+}
+.navT{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40rpx;
+  padding: 30rpx 0;
+  font-size: 28rpx;
+}
+.smallNav{
+  display: flex;
+  flex-flow: row nowrap;
+  line-height: inherit;
+}
+.sNavLeft{
+  padding-right: 20rpx;
+  border-right: 2rpx solid #D8D8D8;
+}
+.sNavRight{
+  padding-left:20rpx ;
+}
+.shopItem .shopping:first-child{
+  margin-top: 0;
+}
+.shopping{
+  display: flex;
+  flex-direction: column;
+  margin: 25rpx;
+  border: 1px solid #D8D8D8;
+  border-radius: 2px;
+}
+.img{
+  width: 700rpx;
+  height: 300rpx;
+}
+.text{
+  flex-direction: column;
+  background: white;
+  padding: 15px;
+}
+.text view:first-child{
+  color:#DC3E34;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.text view:last-child{
+  color: #E2E0DF;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.teaItem .tea:first-child{
+  margin-bottom: 10px;
+}
+.tea{
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+}
+.tea image{
+  flex-direction: column;
+  width: 250rpx;
+  height: 200rpx;
+}
+.tea view{
+  margin-left: 10rpx;
+}
+.tea view view:last-child{
+  font-size: 14px;
+  margin-top: 15px;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 20px auto;
+}
+.contact image{
+  width: 28rpx;
+  height: 28rpx;
+}
+.bImage{
+  margin: 0 10px;
+  padding-bottom: 50px;
+}
+.bImage image{
+  width: 700rpx;
+  height: 200rpx;
+}

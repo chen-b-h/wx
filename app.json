@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index1/index",
+    "pages/index2/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "公共抽奖",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "color":"#000000",
+    "selectedColor": "#FF0000",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"static/image/index_1.png",
+        "selectedIconPath":"static/image/index_2.png"
+      },
+      {
+        "pagePath":"pages/index1/index",
+        "text":"发起抽奖",
+        "iconPath":"static/image/gift_1.png",
+        "selectedIconPath":"static/image/gift_2.png"
+      },
+      {
+        "pagePath":"pages/index2/index",
+        "text":"我的",
+        "iconPath":"static/image/my_1.png",
+        "selectedIconPath":"static/image/my_2.png"
+      }
+    ]
+  }
+
+}
